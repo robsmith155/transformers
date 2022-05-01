@@ -712,7 +712,7 @@ if __name__ == "__main__":
                             artifact_path["gpu"]
                         ] += f"*{line}*\n_{stacktraces.pop(0)}_\n\n"
 
-    message = Message("🤗 Results of the scheduled tests.", model_results, additional_results)
+    message = Message("🤗 Results of the WIP PR tests. Please ignore.", model_results, additional_results)
 
     message.post()
     message.post_reply()
